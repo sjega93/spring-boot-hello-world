@@ -7,7 +7,7 @@ phases:
       - docker login -u sjega93 -p Ruby240895!
   build:
     commands:
-      - docker build -t sjega93/test:latest .
+      - docker build -t sjega93/test:newversionFFHS .
 
   post_build:
     commands:
