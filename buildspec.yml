@@ -14,4 +14,4 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker images
-      - docker push sjega93/test:latest
+      - docker push sjega93/test:newversionFFHS
