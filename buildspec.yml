@@ -17,6 +17,6 @@ phases:
       - docker push sjega93/test:newversionFFHS
       - echo Writing image definitions file...
       - printf '{"ImageURI":"sjega93/test:newversionFFHS"}' > imageDetail.json
-  artifacts:
-    files:
-      - 'imageDetail.json'
+artifacts:
+  files:
+    - 'imageDetail.json'
