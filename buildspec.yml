@@ -18,5 +18,15 @@ phases:
       - echo Writing image definitions file...
       - printf '{"ImageURI":"sjega93/test:newversionFFHS"}' > imageDetail.json
 artifacts:
-  files:
+ files: 
     - 'imageDetail.json'
+    - 'appspec.yaml'
+    - 'taskdef.json'
+  secondary-artifacts:
+    DefinitionArtifact:
+      files:
+        - appspec.yaml
+        - taskdef.json
+    ImageArtifact:
+      files:
+        - imageDetail.json

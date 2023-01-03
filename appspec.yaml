@@ -1,0 +1,10 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-east-1:014692420534:task-definition/testFFHS:1"
+        LoadBalancerInfo:
+          ContainerName: "testFFHS"
+          ContainerPort: 80
+        PlatformVersion: "LATEST"
