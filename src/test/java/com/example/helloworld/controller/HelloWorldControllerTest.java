@@ -22,6 +22,6 @@ public class HelloWorldControllerTest {
 
         mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, Smiletest6!"));
+                .andExpect(content().string("Hello, Smiletest7!"));
     }
 }
